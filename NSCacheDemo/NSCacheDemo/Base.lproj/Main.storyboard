@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQa-HQ-v8L">
+                                <rect key="frame" x="209" y="100" width="183" height="30"/>
+                                <state key="normal" title="cache Image Data"/>
+                                <connections>
+                                    <action selector="cacheAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rdg-Sx-Bvw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzK-Qp-Xpa">
+                                <rect key="frame" x="209" y="165" width="183" height="30"/>
+                                <state key="normal" title="cache Person"/>
+                                <connections>
+                                    <action selector="cachePersonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVD-6u-Kj7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtS-4M-47v">
+                                <rect key="frame" x="191" y="232" width="219" height="30"/>
+                                <state key="normal" title="cache Image Data By Dictionary"/>
+                                <connections>
+                                    <action selector="cacheImageByDictionaryAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tVN-7F-1Xs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZtS-4M-47v" firstAttribute="top" secondItem="DzK-Qp-Xpa" secondAttribute="bottom" constant="37" id="5g6-jl-oYQ"/>
+                            <constraint firstItem="SQa-HQ-v8L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GUe-rs-7Pm"/>
+                            <constraint firstItem="ZtS-4M-47v" firstAttribute="centerX" secondItem="SQa-HQ-v8L" secondAttribute="centerX" id="Jal-wl-cEP"/>
+                            <constraint firstItem="DzK-Qp-Xpa" firstAttribute="top" secondItem="SQa-HQ-v8L" secondAttribute="bottom" constant="35" id="PAr-zg-7Na"/>
+                            <constraint firstItem="DzK-Qp-Xpa" firstAttribute="centerX" secondItem="SQa-HQ-v8L" secondAttribute="centerX" id="YPP-3R-g5q"/>
+                            <constraint firstItem="SQa-HQ-v8L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="jTq-ip-3LM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="339"/>
+        </scene>
+    </scenes>
+</document>
